@@ -1,0 +1,25 @@
+{
+  "name": "financing-sustainable-cities",
+  "version": "1.0.0",
+  "description": "A project to help the cities explore and build bussiness models related to sustainable initiatives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vizzuality/financing-sustainable-cities.git"
+  },
+  "author": "Vizzuality",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vizzuality/financing-sustainable-cities/issues"
+  },
+  "homepage": "https://github.com/Vizzuality/financing-sustainable-cities#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0"
+  }
+}

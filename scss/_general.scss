@@ -1,0 +1,43 @@
+/*
+ * General rules for all hover the proyect
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-1, Helvetica, Arial, sans-serif;
+  color: $font-color-dark;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, button, input, select, textarea {
+  &:focus {
+    outline: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $font-color-dark;
+}
+
+ul {
+  @extend %list-reset;
+}
+
+////////////////////
+//**** utils  ****//
+////////////////////
+.is-flex {
+  display: flex;
+  display: -ms-box;
+}
+
+.is-bold {
+  font-weight: bold;
+}

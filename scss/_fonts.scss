@@ -1,0 +1,16 @@
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight, $style: "normal") {
+  @font-face {
+    font-family: $font-family;
+    src: url(fonts/$font-file + '.eot');
+    src: url(fonts/$font-file + '.eot?#iefix') format("embedded-opentype"),
+         url(fonts/$font-file + '.woff') format("truetype"),
+         url(fonts/$font-file + '.woff2') format("woff"),
+         url(fonts/$font-file + '.ttf') format("woff2"),
+         url(fonts/$font-file + '.ttf') format(".svg#" + $font-file);
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face('museo-sans', "museosans-500", 500);
