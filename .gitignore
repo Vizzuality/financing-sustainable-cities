@@ -1,0 +1,13 @@
+/node-modules# Mac OS
+.DS_Store
+
+# Text editors
+*.sublime*
+.sublime*
+
+# Vendors
+/node_modules
+
+# Logs
+*.log*
+
