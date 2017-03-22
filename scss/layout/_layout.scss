@@ -1,3 +1,53 @@
 section {
-  padding-bottom: 95px;
+  padding-bottom: 105px;
 }
+
+.l-header,
+.l-know-more {
+  padding: 130px 0 120px;
+  background-color: rgba($color-1, .75);
+
+  .-subtitle {
+    padding-bottom: 90px;
+    text-align: center;
+  }
+}
+
+.l-index {
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba($color-1, .5);
+
+  li {
+    display: inline-block;
+    padding: 0 20px;
+
+    a {
+      color: $font-color-light;
+    }
+  }
+
+}
+
+.l-main {
+  padding-top: 100px;
+}
+
+.l-higlight {
+  margin: 82px 0 63px;
+
+  .-subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+.l-blockquote {
+  margin: 45px 0 80px;
+}
+
+.l-blogs,
+.l-events {
+  padding-bottom: 0;
+}
+
+

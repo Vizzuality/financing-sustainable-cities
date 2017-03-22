@@ -3,10 +3,14 @@
   &.-plain {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.88;
+    line-height: 1.6;
 
     & + & {
       margin-top: 45px;
+    }
+
+    & + .m-buttons-wrapper {
+      margin-top: 38px;
     }
   }
 
@@ -17,7 +21,7 @@
     line-height: 1.03;
     text-align: center;
 
-    padding-top: 50px;
+    padding-top: 65px;
     padding-bottom: 60px;
 
     &:before {
@@ -53,6 +57,37 @@
     font-size: 16px;
     font-weight: bold;
     line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  &.-quote {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 75px 30px;
+    margin-left: 20px;
+    border-top: 5px solid $color-1;
+    border-bottom: 5px solid $color-1;
+
+    &:after,
+    &:before {
+      position: absolute;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 1em;
+      color: $color-1;
+    }
+
+    &:before {
+      content: "“";
+      top: 20px;
+    }
+
+    &:after {
+      content: "”";
+      bottom: 20px;
+      right: 30px;
+    }
   }
 
   &.-light {
@@ -66,4 +101,8 @@
   &.-highlighted {
     color: $font-color-highlighted;
   }
+}
+
+strong {
+  color: $font-color-highlighted;
 }

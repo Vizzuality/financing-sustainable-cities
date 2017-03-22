@@ -1,0 +1,25 @@
+.btn {
+  @extend %button-reset;
+  padding: 14px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  p + & {
+    padding-top: 40px;
+  }
+
+  &.-primary {
+    background-color: $white;
+    color: $font-color-highlighted;
+  }
+}
+
+.m-buttons-wrapper {
+  text-align: center;
+}
