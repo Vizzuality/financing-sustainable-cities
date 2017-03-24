@@ -4,8 +4,19 @@ section {
 
 .l-header,
 .l-know-more {
+  position: relative;
   padding: 130px 0 120px;
-  background-color: rgba($color-1, .75);
+  background-size: cover;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-1, .75);
+  }
 
   .-subtitle {
     padding-bottom: 90px;
@@ -13,10 +24,20 @@ section {
   }
 }
 
+.l-header {
+  background-image: url('../images/img-1.jpg');
+}
+
+.l-know-more {
+  &:before {
+    background-color: rgba($color-1, 1);
+  }
+}
+
 .l-index {
   padding: 20px 0;
   text-align: center;
-  background-color: rgba($color-1, .5);
+  background-color: rgba($color-1, 1);
 
   li {
     display: inline-block;

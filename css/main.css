@@ -75,7 +75,8 @@ body {
   font-family: "museo-sans", Helvetica, Arial, sans-serif;
   color: #474444;
   font-size: 15px;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background-color: #DDE4E6; }
 
 a:focus, button:focus, input:focus, select:focus, textarea:focus {
   outline: 0; }
@@ -83,6 +84,12 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 a {
   text-decoration: none;
   color: #474444; }
+
+img {
+  max-width: 100%; }
+
+.image {
+  margin: 65px 0; }
 
 .is-flex {
   display: flex;
@@ -124,13 +131,13 @@ a {
     background-color: black; }
   .header.-title.-light:before,
   .text.-title.-light:before {
-    background-color: #fff; }
+    background-color: #DDE4E6; }
   .header.-title.-dark:before,
   .text.-title.-dark:before {
     background-color: #474444; }
   .header.-title.-highlighted:before,
   .text.-title.-highlighted:before {
-    background-color: #1A3398; }
+    background-color: #5B5D62; }
 
 .header.-subtitle,
 .text.-subtitle {
@@ -146,8 +153,8 @@ a {
   line-height: 1.25;
   padding: 75px 30px;
   margin-left: 20px;
-  border-top: 5px solid #1A3398;
-  border-bottom: 5px solid #1A3398; }
+  border-top: 5px solid #5B5D62;
+  border-bottom: 5px solid #5B5D62; }
   .header.-quote:after, .header.-quote:before,
   .text.-quote:after,
   .text.-quote:before {
@@ -155,7 +162,7 @@ a {
     font-size: 70px;
     font-weight: 700;
     line-height: 1em;
-    color: #1A3398; }
+    color: #5B5D62; }
   .header.-quote:before,
   .text.-quote:before {
     content: "“";
@@ -168,7 +175,7 @@ a {
 
 .header.-light,
 .text.-light {
-  color: #fff; }
+  color: #DDE4E6; }
 
 .header.-dark,
 .text.-dark {
@@ -176,10 +183,16 @@ a {
 
 .header.-highlighted,
 .text.-highlighted {
-  color: #1A3398; }
+  color: #5B5D62; }
 
 strong {
-  color: #1A3398; }
+  color: #5B5D62; }
+
+.link {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-transform: uppercase; }
 
 .btn {
   padding: 14px 20px;
@@ -192,8 +205,8 @@ strong {
   p + .btn {
     padding-top: 40px; }
   .btn.-primary {
-    background-color: #fff;
-    color: #1A3398; }
+    background-color: #DDE4E6;
+    color: #5B5D62; }
 
 .m-buttons-wrapper {
   text-align: center; }
@@ -203,22 +216,38 @@ section {
 
 .l-header,
 .l-know-more {
+  position: relative;
   padding: 130px 0 120px;
-  background-color: rgba(26, 51, 152, 0.75); }
+  background-size: cover; }
+  .l-header:before,
+  .l-know-more:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(91, 93, 98, 0.75); }
   .l-header .-subtitle,
   .l-know-more .-subtitle {
     padding-bottom: 90px;
     text-align: center; }
 
+.l-header {
+  background-image: url("../images/img-1.jpg"); }
+
+.l-know-more:before {
+  background-color: #5b5d62; }
+
 .l-index {
   padding: 20px 0;
   text-align: center;
-  background-color: rgba(26, 51, 152, 0.5); }
+  background-color: #5b5d62; }
   .l-index li {
     display: inline-block;
     padding: 0 20px; }
     .l-index li a {
-      color: #fff; }
+      color: #DDE4E6; }
 
 .l-main {
   padding-top: 100px; }
@@ -756,12 +785,39 @@ section {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  position: relative;
   width: 100%;
   height: 450px;
-  padding: 30px;
-  background-color: rgba(26, 51, 152, 0.75); }
+  padding: 30px; }
+  .m-key-component .veil,
+  .m-key-component .image {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .m-key-component .veil {
+    background-color: rgba(91, 93, 98, 0.75); }
+  .m-key-component .image {
+    margin: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    background-position: center;
+    background-size: cover; }
+  .m-key-component .-first {
+    background-image: url("../images/img-3.jpg"); }
+  .m-key-component .-second {
+    background-image: url("../images/img-4.jpg"); }
+  .m-key-component .-third {
+    background-image: url("../images/img-5.jpg"); }
+  .m-key-component * {
+    position: relative;
+    z-index: 1; }
   .m-key-component span {
-    color: #fff;
+    color: #DDE4E6;
     font-size: 70px;
     font-weight: bold;
     line-height: 1.03;

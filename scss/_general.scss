@@ -13,6 +13,7 @@ body {
   color: $font-color-dark;
   font-size: $font-size;
   -webkit-font-smoothing: antialiased;
+  background-color: $white;
 }
 
 a, button, input, select, textarea {
@@ -28,6 +29,14 @@ a {
 
 ul {
   @extend %list-reset;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  margin: 65px 0;
 }
 
 ////////////////////
