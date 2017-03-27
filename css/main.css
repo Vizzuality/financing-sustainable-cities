@@ -773,10 +773,29 @@ section {
 .m-blog-post {
   display: block;
   margin-bottom: 90px; }
-  .m-blog-post img {
+  .m-blog-post .image {
+    display: block;
     width: 100%;
     height: 246px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: cover; }
+    .m-blog-post .image.post-1 {
+      background-image: url("../images/post-1.jpg"); }
+    .m-blog-post .image.post-2 {
+      background-image: url("../images/post-2.jpg"); }
+    .m-blog-post .image.post-3 {
+      background-image: url("../images/post-3.jpg"); }
+    .m-blog-post .image.post-4 {
+      background-image: url("../images/post-4.jpg"); }
+    .m-blog-post .image.post-5 {
+      background-image: url("../images/post-5.jpg"); }
+    .m-blog-post .image.post-6 {
+      background-image: url("../images/post-6.jpg"); }
+    .m-blog-post .image.post-7 {
+      background-image: url("../images/post-7.jpg"); }
+    .m-blog-post .image.post-8 {
+      background-image: url("../images/post-8.jpg"); }
   .m-blog-post .-subtitle {
     margin-bottom: 25px; }
 
