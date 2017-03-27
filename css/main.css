@@ -39,8 +39,9 @@ ul {
   padding: 0;
   margin: 0; }
 
-.header.-title:before,
-.text.-title:before {
+.header.-title:before, .header.-main-title:before,
+.text.-title:before,
+.text.-main-title:before {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -113,10 +114,11 @@ img {
   .text.-plain + .m-buttons-wrapper {
     margin-top: 38px; }
 
-.header.-title,
-.text.-title {
+.header.-title, .header.-main-title,
+.text.-title,
+.text.-main-title {
   position: relative;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -124,29 +126,38 @@ img {
   text-align: center;
   margin-top: 30px;
   padding: 60px 0; }
-  .header.-title:before,
-  .text.-title:before {
+  .header.-title:before, .header.-main-title:before,
+  .text.-title:before,
+  .text.-main-title:before {
     content: "";
     top: 0;
     width: 140px;
     height: 5px;
     background-color: black; }
-  .header.-title.-light:before,
-  .text.-title.-light:before {
+  .header.-title.-light:before, .header.-main-title.-light:before,
+  .text.-title.-light:before,
+  .text.-main-title.-light:before {
     background-color: #fff; }
-  .header.-title.-dark:before,
-  .text.-title.-dark:before {
+  .header.-title.-dark:before, .header.-main-title.-dark:before,
+  .text.-title.-dark:before,
+  .text.-main-title.-dark:before {
     background-color: #5B5D62; }
-  .header.-title.-highlighted:before,
-  .text.-title.-highlighted:before {
+  .header.-title.-highlighted:before, .header.-main-title.-highlighted:before,
+  .text.-title.-highlighted:before,
+  .text.-main-title.-highlighted:before {
     background-color: #009DA5; }
+
+.header.-main-title,
+.text.-main-title {
+  font-size: 70px; }
 
 .header.-subtitle,
 .text.-subtitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.25;
+  letter-spacing: 2px;
   text-transform: uppercase; }
 
 .header.-quote,
