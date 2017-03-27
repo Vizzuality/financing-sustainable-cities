@@ -2,8 +2,8 @@
 /* Fonts includer */
 @font-face {
   font-family: "museo-sans";
-  src: url(fonts/"museosans-500".eot);
-  src: url(fonts/"museosans-500".eot?#iefix) format("embedded-opentype"), url(fonts/"museosans-500".woff) format("truetype"), url(fonts/"museosans-500".woff2) format("woff"), url(fonts/"museosans-500".ttf) format("woff2"), url(fonts/"museosans-500".ttf) format(".svg#museosans-500");
+  src: url("../fonts/museosans-500.eot");
+  src: url("../fonts/museosans-500.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-500.woff") format("truetype"), url("../fonts/museosans-500.woff2") format("woff"), url("../fonts/museosans-500.ttf") format("woff2");
   font-weight: 500;
   font-style: "normal"; }
 
@@ -76,7 +76,7 @@ body {
   color: #5B5D62;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
-  background-color: #DDE4E6; }
+  background-color: #fff; }
 
 a:focus, button:focus, input:focus, select:focus, textarea:focus {
   outline: 0; }
@@ -117,8 +117,10 @@ img {
 .text.-title {
   position: relative;
   font-size: 70px;
-  font-weight: bold;
-  line-height: 1.03;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 1.2;
   text-align: center;
   padding-top: 65px;
   padding-bottom: 60px; }
@@ -131,7 +133,7 @@ img {
     background-color: black; }
   .header.-title.-light:before,
   .text.-title.-light:before {
-    background-color: #DDE4E6; }
+    background-color: #fff; }
   .header.-title.-dark:before,
   .text.-title.-dark:before {
     background-color: #5B5D62; }
@@ -143,6 +145,7 @@ img {
 .text.-subtitle {
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.25;
   text-transform: uppercase; }
 
@@ -175,7 +178,7 @@ img {
 
 .header.-light,
 .text.-light {
-  color: #DDE4E6; }
+  color: #fff; }
 
 .header.-dark,
 .text.-dark {
@@ -205,7 +208,7 @@ strong {
   p + .btn {
     padding-top: 40px; }
   .btn.-primary {
-    background-color: #DDE4E6;
+    background-color: #fff;
     color: #009DA5; }
 
 .m-buttons-wrapper {
@@ -247,7 +250,7 @@ section {
     display: inline-block;
     padding: 0 20px; }
     .l-index li a {
-      color: #DDE4E6; }
+      color: #fff; }
 
 .l-main {
   padding-top: 100px; }
@@ -836,7 +839,7 @@ section {
     position: relative;
     z-index: 1; }
   .m-key-component span {
-    color: #DDE4E6;
+    color: #fff;
     font-size: 70px;
     font-weight: bold;
     line-height: 1.03;
