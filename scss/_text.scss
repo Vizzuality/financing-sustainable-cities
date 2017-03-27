@@ -92,6 +92,10 @@
     }
   }
 
+  &.-center {
+    text-align: center;
+  }
+
   &.-light {
     color: $font-color-light;
   }

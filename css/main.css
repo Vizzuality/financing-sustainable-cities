@@ -176,6 +176,10 @@ img {
     bottom: 20px;
     right: 30px; }
 
+.header.-center,
+.text.-center {
+  text-align: center; }
+
 .header.-light,
 .text.-light {
   color: #fff; }
