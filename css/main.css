@@ -104,6 +104,9 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6; }
+  .header.-plain.-margin,
+  .text.-plain.-margin {
+    margin-bottom: 45px; }
   .header.-plain + .header.-plain,
   .text.-plain + .header.-plain, .header.-plain +
   .text.-plain,
@@ -202,6 +205,11 @@ img {
 .header.-highlighted,
 .text.-highlighted {
   color: #009DA5; }
+
+.header a,
+.text a {
+  color: #009DA5;
+  font-weight: bold; }
 
 strong {
   color: #009DA5; }
@@ -815,8 +823,34 @@ section {
       background-image: url("../images/post-7.jpg"); }
     .m-blog-post .image.post-8 {
       background-image: url("../images/post-8.jpg"); }
+    .m-blog-post .image.post-9 {
+      background-image: url("../images/post-9.jpg"); }
+    .m-blog-post .image.post-10 {
+      background-image: url("../images/post-10.jpg"); }
+    .m-blog-post .image.post-11 {
+      background-image: url("../images/post-11.jpg"); }
+    .m-blog-post .image.post-12 {
+      background-image: url("../images/post-12.jpg"); }
+    .m-blog-post .image.post-13 {
+      background-image: url("../images/post-13.jpg"); }
   .m-blog-post .-subtitle {
     margin-bottom: 25px; }
+
+.m-partnership {
+  margin-top: 70px; }
+  .m-partnership .logo {
+    display: block;
+    width: 100%;
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .m-partnership .logo.citi-foundation {
+      background-image: url("../images/citi-foundation-logo.jpg"); }
+    .m-partnership .logo.c40 {
+      background-image: url("../images/c40-cities.png"); }
+    .m-partnership .logo.wri {
+      background-image: url("../images/wri-ross-cities-logo.png"); }
 
 .m-key-component {
   display: flex;
