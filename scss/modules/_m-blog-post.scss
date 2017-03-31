@@ -21,6 +21,10 @@ $post: 'post-1', 'post-2', 'post-3', 'post-4', 'post-5', 'post-6', 'post-7', 'po
     }
   }
 
+  .header + .text {
+    margin-top: 10px;
+  }
+
   .-subtitle {
     margin-bottom: 25px;
   }

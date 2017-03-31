@@ -897,6 +897,8 @@ section {
       background-image: url("../images/post-12.jpg"); }
     .m-blog-post .image.post-13 {
       background-image: url("../images/post-13.jpg"); }
+  .m-blog-post .header + .text {
+    margin-top: 10px; }
   .m-blog-post .-subtitle {
     margin-bottom: 25px; }
 
@@ -925,17 +927,17 @@ section {
   cursor: pointer; }
   .m-accordion .accordion-header:after {
     content: "";
-    position: absolute;
-    top: 0;
-    right: -10px;
-    transform-origin: 5px;
-    transition: .2s ease-in;
     width: 10px;
     height: 10px;
     border-top: 1px solid #009DA5;
     border-left: 1px solid #009DA5;
     transform: rotate(135deg);
-    pointer-events: none; }
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform-origin: 5px;
+    transition: .2s ease-in; }
   .m-accordion .accordion-header.is-open:after {
     transform: rotate(225deg); }
 

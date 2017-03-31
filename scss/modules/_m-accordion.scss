@@ -10,12 +10,12 @@
 
     &:after {
       content: "";
+      @include arrow (10px, $color-1, 1px, 135deg);
       position: absolute;
       top: 0;
       right: -10px;
       transform-origin: 5px;
       transition: .2s ease-in;
-      @include arrow (10px, $color-1, 1px, 135deg);
     }
 
     &.is-open:after {
