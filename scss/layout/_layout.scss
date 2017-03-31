@@ -39,8 +39,13 @@ section {
   text-align: center;
   background-color: rgba($color-1, 1);
 
+  ul {
+    padding: 0;
+  }
+
   li {
     display: inline-block;
+    margin-bottom: 0;
     padding: 0 20px;
 
     a {

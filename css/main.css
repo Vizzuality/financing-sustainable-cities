@@ -79,6 +79,13 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #fff; }
 
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6; }
+  p + p {
+    margin-top: 45px; }
+
 a:focus, button:focus, input:focus, select:focus, textarea:focus {
   outline: 0; }
 
@@ -87,7 +94,7 @@ a {
   color: #5B5D62; }
 
 ul, ol {
-  padding: 45px 0 45px 45px; }
+  padding: 45px 0 0 45px; }
   ul li, ol li {
     margin-bottom: 20px; }
   ul li p, ol li p {
@@ -103,6 +110,11 @@ ol li {
 
 img {
   max-width: 100%; }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 45px; }
 
 .image {
   margin: 65px 0; }
@@ -127,17 +139,24 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6; }
+  .header.-plain + .header.-plain,
+  .text.-plain + .header.-plain, .header.-plain +
+  .text.-plain,
+  .text.-plain +
+  .text.-plain {
+    margin-top: 45px; }
 
 .header.-margin,
 .text.-margin {
   margin-bottom: 45px; }
 
-.header + .header,
-.text + .header, .header +
-.text,
-.text +
-.text {
-  margin-top: 45px; }
+.header.-margin-top,
+.text.-margin-top {
+  margin-top: 45px !important; }
+
+.header.-no-margin,
+.text.-no-margin {
+  margin: 0 !important; }
 
 .header + .m-buttons-wrapper,
 .text + .m-buttons-wrapper {
@@ -250,6 +269,18 @@ strong {
   line-height: 1.25;
   text-transform: uppercase; }
 
+.header + .text {
+  margin-top: 45px; }
+
+.text + .text {
+  margin-top: 45px; }
+
+.text + .header {
+  margin-top: 45px; }
+
+ul + .text {
+  margin-top: 45px; }
+
 .btn {
   padding: 14px 20px;
   border-radius: 4px;
@@ -299,8 +330,11 @@ section {
   padding: 20px 0;
   text-align: center;
   background-color: #009da5; }
+  .l-index ul {
+    padding: 0; }
   .l-index li {
     display: inline-block;
+    margin-bottom: 0;
     padding: 0 20px; }
     .l-index li a {
       color: #fff; }
@@ -881,6 +915,47 @@ section {
       background-image: url("../images/c40-cities.png"); }
     .m-partnership .logo.wri {
       background-image: url("../images/wri-ross-cities-logo.png"); }
+
+.m-accordion > li {
+  list-style: none; }
+
+.m-accordion .accordion-header {
+  position: relative;
+  margin-bottom: 45px;
+  cursor: pointer; }
+  .m-accordion .accordion-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform-origin: 5px;
+    transition: .2s ease-in;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #009DA5;
+    border-left: 1px solid #009DA5;
+    transform: rotate(135deg);
+    pointer-events: none; }
+  .m-accordion .accordion-header.is-open:after {
+    transform: rotate(225deg); }
+
+.m-accordion .accordion-body {
+  display: none;
+  padding-bottom: 45px;
+  margin-bottom: 45px; }
+  .m-accordion .accordion-body:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 45px;
+    left: 33%;
+    width: 33%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #009DA5; }
+
+.m-accordion .is-open + .accordion-body {
+  display: block; }
 
 .m-key-component {
   display: flex;

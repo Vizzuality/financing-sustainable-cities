@@ -1,0 +1,47 @@
+.m-accordion {
+  > li {
+    list-style: none;
+  }
+
+  .accordion-header {
+    position: relative;
+    margin-bottom: 45px;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      transform-origin: 5px;
+      transition: .2s ease-in;
+      @include arrow (10px, $color-1, 1px, 135deg);
+    }
+
+    &.is-open:after {
+      transform: rotate(225deg);
+    }
+  }
+
+  .accordion-body {
+    display: none;
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 45px;
+      left: 33%;
+      width: 33%;
+      height: 2px;
+      margin: 0 auto;
+      background-color: $color-1;
+    }
+  }
+
+  .is-open + .accordion-body {
+    display: block;
+  }
+}

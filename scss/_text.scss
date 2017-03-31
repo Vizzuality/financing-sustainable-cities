@@ -4,14 +4,22 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+
+    & + & {
+      margin-top: 45px;
+    }
   }
 
   &.-margin {
     margin-bottom: 45px;
   }
 
-  & + & {
-    margin-top: 45px;
+  &.-margin-top {
+    margin-top: 45px !important;
+  }
+
+  &.-no-margin {
+    margin: 0 !important;
   }
 
   & + .m-buttons-wrapper {
@@ -138,3 +146,23 @@ strong {
   line-height: 1.25;
   text-transform: uppercase;
 }
+
+.header + .text {
+  margin-top: 45px;
+}
+
+.text + .text {
+  margin-top: 45px;
+}
+
+.text + .header {
+  margin-top: 45px;
+}
+
+ul + .text {
+  margin-top: 45px;
+}
+
+// ul, ol + .header {
+//   margin-top: 45px;
+// }
