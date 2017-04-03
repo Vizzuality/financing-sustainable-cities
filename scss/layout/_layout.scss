@@ -5,7 +5,6 @@ section {
 .l-header,
 .l-know-more {
   position: relative;
-  padding: 130px 0 120px;
   background-size: cover;
 
   &:before {
@@ -24,11 +23,17 @@ section {
   }
 }
 
+.l-header {
+  padding-top:100px;
+}
+
 .l-header.-main {
   background-image: url('../images/img-1.jpg');
 }
 
 .l-know-more {
+  padding: 130px 0 120px;
+
   &:before {
     background-color: rgba($color-1, 1);
   }

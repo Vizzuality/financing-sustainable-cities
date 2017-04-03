@@ -173,7 +173,7 @@ iframe {
   font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   line-height: 1.5;
   text-align: center;
   margin-top: 30px;
@@ -201,7 +201,7 @@ iframe {
 
 .header.-main-title,
 .text.-main-title {
-  font-size: 70px; }
+  font-size: 60px; }
 
 .header.-subtitle,
 .text.-subtitle {
@@ -304,7 +304,6 @@ section {
 .l-header,
 .l-know-more {
   position: relative;
-  padding: 130px 0 120px;
   background-size: cover; }
   .l-header:before,
   .l-know-more:before {
@@ -320,11 +319,16 @@ section {
     padding-bottom: 90px;
     text-align: center; }
 
+.l-header {
+  padding-top: 100px; }
+
 .l-header.-main {
   background-image: url("../images/img-1.jpg"); }
 
-.l-know-more:before {
-  background-color: #009da5; }
+.l-know-more {
+  padding: 130px 0 120px; }
+  .l-know-more:before {
+    background-color: #009da5; }
 
 .l-index {
   padding: 20px 0;
