@@ -923,7 +923,6 @@ section {
 
 .m-accordion .accordion-header {
   position: relative;
-  margin-bottom: 45px;
   cursor: pointer; }
   .m-accordion .accordion-header:after {
     content: "";
@@ -944,7 +943,7 @@ section {
 .m-accordion .accordion-body {
   display: none;
   padding-bottom: 45px;
-  margin-bottom: 45px; }
+  margin: 45px 0; }
   .m-accordion .accordion-body:after {
     content: "";
     position: absolute;

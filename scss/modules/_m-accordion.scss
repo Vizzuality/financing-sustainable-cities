@@ -5,7 +5,6 @@
 
   .accordion-header {
     position: relative;
-    margin-bottom: 45px;
     cursor: pointer;
 
     &:after {
@@ -26,7 +25,7 @@
   .accordion-body {
     display: none;
     padding-bottom: 45px;
-    margin-bottom: 45px;
+    margin: 45px 0;
 
     &:after {
       content: "";
