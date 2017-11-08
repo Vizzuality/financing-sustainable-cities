@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Vizzuality/financing-sustainable-cities#readme",
   "devDependencies": {
-    "node-sass": "^4.5.1",
+    "node-sass": "^4.6.0",
     "nodemon": "^1.11.0"
   }
 }
